@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Static Player</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <button><i class="fa fa-bars" title="Navigation"></i></button>
+    <h1>Ticket to Ride</h1>
+  </header>
+  <main>
+    <div class="overall">
+      <dl>
+        <dt>Player</dt>
+        <dd>
+          <span class="player__name">Phil</span>
+          <button class="player__color">
+            <i class="fa fa-caret-down" title="Select color"></i>
+            <span class="icon icon--train icon--train-red">Red</span>
+          </button>
+          <!-- <ul class="player__color-options">
+            <li>Red</li>
+            <li>Yello</li>
+            <li>Green</li>
+            <li>Blue</li>
+            <li>Black</li>
+          </ul> -->
+        </dd>
+        <dt>Total Score</dt>
+        <dd>33</dd>
+        <dt>Cars Used</dt>
+        <dd>24</dd>
+        <dt>Cars Remaining</dt>
+        <dd>21</dd>
+      </dl>
+    </div>
+    <div class="score-group">
+      <h2 class="score-group__heading-row">
+        <span class="score-group__label">Routes</span>
+        <span class="score-group__total">33</span>
+      </h2>
+      <ul class="score-group__items">
+        <li class="route">
+          <span class="route__units">1</span>
+          <i class="route__units-icon route__units-icon--1">
+            •
+          </i>
+          <span class="route__points">1</span>
+          <div class="route__count-bar btn-bar btn-bar--rounded">
+            <button class="btn btn--circle-icon">
+              <i class="fa fa-minus" title="Subtract route"></i>
+            </button>
+            <span class="route__count">2</span>
+            <button class="btn btn--circle-icon">
+              <i class="fa fa-plus" title="Add route"></i>
+            </button>
+          </div>
+          <span class="route__score">2</span>
+        </li>
+        <!-- repeats for 2, 3, 4, 5, 6, and 8 -->
+      </ul>
+    </div>
+    <div class="score-group">
+      <h2 class="score-group__heading-row">
+        <span class="score-group__label">Routes</span>
+        <span class="score-group__total">33</span>
+      </h2>
+      <ul class="score-group__items">
+        <li class="ticket">
+          <span class="ticket__start">Calicut</span>
+          <span class="ticket__end">Lausanne</span>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
